@@ -8,26 +8,39 @@
 </head>
 <body>
     <script>
-         const number = parseInt(prompt('Enter a number: '));
-        let n1 = 0,
-            n2 = 1,
-            nextTerm;
+        //  const number = parseInt(prompt('Enter a number: '));
+        // let n1 = 0,
+        //     n2 = 1,
+        //     nextTerm;
 
-        document.write('Fibonacci:');
-        document.write(n1); 
-        document.write(n2); 
+        // document.write('Fibonacci:');
+        // document.write(n1); 
+        // document.write(n2); 
 
-        nextTerm = n1 + n2;
+        // nextTerm = n1 + n2;
 
-        while (nextTerm <= number) {
+        // while (nextTerm <= number) {
 
             
-            document.write(nextTerm);
+        //     document.write(nextTerm);
 
-            n1 = n2;
-            n2 = nextTerm;
-            nextTerm = n1 + n2;
-        }
+        //     n1 = n2;
+        //     n2 = nextTerm;
+        //     nextTerm = n1 + n2;
+        // }
+
+         let count = 0;
+         let num1 = 0;
+         let num2 = 1;
+         let result = "";
+         while (count < 20) {
+             result += num1 + " ";
+             let sumOfPrevTwo = num1 + num2;
+             num1 = num2;
+             num2 = sumOfPrevTwo;
+             count++;
+         }
+         document.write(result);
     </script>
 </body>
 </html>
